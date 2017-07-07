@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Le Expensziv</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	body{
+		height:100%;
+		width:100%;
+		position:fixed;
+		margin:0;
+		padding:0;
+		overflow-x:hidden;
+		}
+
+	.overall-grid{
+	
+		height:100%;
+		width:100%;
+		position: fixed;
+		overflow-x:hidden;
+		margin: 0;
+		padding: 0;
+		
+	}
+	#banner {
+			background:url(banner2.png) no-repeat top center fixed;
+			background-size:cover;
+			height:600px;
+	
+			width:100%;
+			}	
+	
+	.display-list { 
+				    position:fixed;
+					width:100%;
+					
+				  }
+	.display-list ul {left:50%;
+				      }
+	.display-list ul li{
+			display:inline;
+			padding:15px;
+			}
+	
+	.display-list ul li a { padding:10px;
+							font-size:18.5px;
+							text-decoration:none;
+							color:white;
+						  }
+	.display-list ul li a:hover{
+							    color:#FFDF00;
+						       }
+	@font-face {font-family:scriptina;
+			    src:url(SCRIPTIN.ttf);}
+	 .our-story-font{
+			font-family:scriptina;
+			text-align:center;
+			font-size:60px;
+			color:#D4AF37;
+			font-weight:bold;}
+	.text-padding {margin-top:-3cm;}
+	.animate{animation:fadeIn 1s ease-in none;}
+	@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+	}
+	.logo{margin-top:1cm;}
+	.content {text-align:center;
+			  font-family: roboto, arial, sans-serif;
+			      width: 700px;
+				  border: none;
+				  padding: 25px;
+				  line-height:50px;
+			  }
+			  </style>
+	
+</head>
+<body>
+<div class="overall-grid">
+	<div id="banner"><center>
+		<nav class="display-list">
+		
+			<ul>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="AboutUs.html">About Us</a></li>
+				<li><a href="Menu.html">Menu</a></li>
+				<li><a href="Gallery.html">Gallery</a></li>
+				<li><a href="Reservations.html">Reservations</a></li>
+				<li><a href="PrivateDining.html">Private Dining</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+			
+		</nav>
+		</center>
+			<div class="animate">
+			<center><img src="LeExpenszivlogo.png" class="logo" alt="Le Expensziv Logo" width="650" height="325"></center>
+				<div class="text-padding">
+					<h1 class="our-story-font">Take a Look Inside</h1>
+				</div>
+			</div>	
+		</div>
+</div>
+</body>
+</html>

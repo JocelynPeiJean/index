@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Le Expensziv</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles.css">
+	
+	<script>
+	function validateForm() {
+	if (document.forms[0].userName.value=="") {
+		alert("Name field cannot be empty.")
+		return false;
+	} //end if
+	if(document.forms[0].userPhone.value=="") {
+		alert("Phone number field cannot be empty.");
+		return false;
+		}//end if
+	if(document.forms[0].time.value=="") {
+		alert("Date & time field cannot be empty.");
+		return false;
+		}//end if
+	if(document.forms[0].time.value<1) {
+		alert("Number of pax field cannot be empty.");
+		return false;
+		}//end if
+		return true;
+	}//end of function validateForm
+	</script>
+
+	
+</head>
+<body>
+<div class="overall-grid">
+	<div id="banner">
+		<nav class="display-list">
+		
+			<ul>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="AboutUs.html">About Us</a></li>
+				<li><a href="Menu.html">Menu</a></li>
+				<li><a href="Gallery.html">Gallery</a></li>
+				<li><a href="Reservations.html">Reservations</a></li>
+				<li><a href="PrivateDining.html">Private Dining</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+			
+		</nav>
+		
+			<div class="animate" style="text-align:center">
+			<img src="LeExpenszivlogo.png" class="logo" alt="Le Expensziv Logo" width="650" height="325">
+				<div class="text-padding">
+					<h1 class="our-story-font">Book A Table</h1>
+				</div>
+			</div>	
+		<div style="text-align:center"><h1 style="padding-top:100px"> Reservation Form</h1>
+	<fieldset>
+	<form method="post" action="http://webdevbasics.net/scripts/demo.php" onsubmit="return validateForm();">
+	<label>Name: </label><input type="text" name="userName" id="userName" maxlength="30">
+	<br>
+	<label>E-mail: </label><input type="email" name="userEmail" id="userEmail" maxlength="50">
+	<br>
+	<label>Phone number: </label><input type="text" name="userPhone" id="userPhone" maxlength="20">
+	<br>
+	<label>Pick a date & time:</label><input type="datetime-local" name="time">
+	<br>
+	<label>Number of pax:</label>
+		<select name="pax">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+		</select>
+	<br><br>
+	Additional Comments:
+	<br><textarea cols=50 rows="5" tabindex="3">
+		</textarea><br>
+	<input type="image" src="reservebutton2.png" alt="Submit" width="80" height="80">
+	</form>
+	</fieldset></div>
+
+		
+		
+		<div>
+	<div id="footer-bg">
+		<div style="padding-top:2cm;line-height:25px;text-align:center"><h1 style="color:#d4af37;text-align:center;font-family:Verdana,Arial,sans-serif">LE EXPENSZIV</h1><p style="color:white;text-align:center;font-family:bookman,Times New Roman,Serif;font-size:20px">1, Jalan Riong, Bangsar, 59100 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia</p><p style="color:#d4af37;text-align:center;font-family:Times New Roman, bookman, Serif;font-size:20px">RESERVATION NUMBER:<a href="tel:012-345-6789" style="color:white;text-align:center;font-family:bookman,times new roman, Serif;font-size:20px">012-345-6789</a><br><br>Email:<a href="mailto:leexpensziv@gmail.com" style="color:white;text-align:center;font-family:bookman,Times New Roman,Serif;font-size:20px">leexpensziv@gmail.com</a><h1 style="color:#d4af37;text-align:center;font-family:verdana,arial,sans-serif">OPENING HOURS</h1><p style="color:white;text-align:center;font-family:bookman,Times New Roman,Serif;font-size:20px">LUNCH:12PM-3PM<br><br>DINNER:6PM-LATE<br><br>CLOSED MONDAY</p></div>
+		<div class="footer-content;text-align:center">
+			
+
+        <div class="footer-left">
+		<ul>
+		<li><a href="https://facebook.com/"><i class="fa fa-facebook-square" style="font-size:36px;color:#d4af37"></i></a></li>
+		<li><a href="https://twitter.com/"><i class="fa fa-twitter" style="font-size:36px;color:#d4af37"></i></a></li>
+		<li><a href="https://youtube.com"><i class="fa fa-youtube" style="font-size:36px;color:#d4af37"></i></a></li>
+		<li><a href="https://linkedin.com"><i class="fa fa-linkedin" style="font-size:36px;color:#d4af37"></i></a></li>
+		</ul>
+		<p style="color:white;font-family:Bookman,Times New Roman,Serif;min-width:1000px">&copy;Copyright Le Expensziv 2016. All rights reserved.</p>
+        </div>
+
+        <div class="footer-right" style="text-align:right">
+		<a href="Reservations.html"><img src="reservebutton.png" alt="Reserve Now" width="100" height="100" style="min-width:1000"></a>
+        </div>
+		
+		</div>
+
+	</div>
+	</div>
+</div>
+</div>
+	
+</body>
+</html>

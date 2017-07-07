@@ -1,0 +1,25 @@
+<h1 class="greetings"><img src="welcome.png" width="300" height="200"></h1>
+
+<footer>
+	<p>22 Royal Street, Sundance Avenue, New York<br>
+	   RESERVATIONS NUMBER: +00 25 854 78521<br>
+       WORKING HOURS:<br>
+       MON- FRI: 08:00 AM - 10:00 PM<br>
+       SAT - SUN: 10:00 AM - 11:00 PM</p>
+</footer>
+
+
+.div1 {width:1000x;
+	       height:100px;
+	       border:none;
+		   overflow-x:scroll;
+		   overflow-y:scroll;
+		   float:right;
+		   margin: 0 5cm 0 20cm;}
+		   
+		   
+		   .emphasis {font-size:20px;
+			   text-align:center;
+			   color:#FFDF00;
+			   margin-top:5cm;
+			   margin-left:3cm;}

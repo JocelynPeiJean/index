@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Le Expensziv</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	body{
+		height:100%;
+		width:100%;
+		position:fixed;
+		margin:0;
+		padding:0;
+		overflow-x:hidden;
+		}
+
+	.overall-grid{
+	
+		height:100%;
+		width:100%;
+		position: fixed;
+		overflow-x:hidden;
+		margin: 0;
+		padding: 0;
+		
+	}
+	#banner {
+			background:url(homepagebanner3.png) no-repeat top center fixed;
+			background-size:cover;
+			height:600px;
+	
+			width:100%;
+			}	
+	
+	.display-list { 
+				    position:fixed;
+					width:100%;
+					
+				  }
+	.display-list ul {left:50%;
+				      }
+	.display-list ul li{
+			display:inline;
+			padding:15px;
+			}
+	
+	.display-list ul li a { padding:10px;
+							font-size:18.5px;
+							text-decoration:none;
+							color:white;
+						  }
+	.display-list ul li a:hover{
+							    color:#FFDF00;
+						       }
+	@font-face {font-family:scriptina;
+			    src:url(SCRIPTIN.ttf);}
+	 .our-story-font{
+			font-family:scriptina;
+			text-align:center;
+			font-size:60px;
+			color:#D4AF37;
+			font-weight:bold;}
+	.text-padding {margin-top:-3cm;}
+	.animate{animation:fadeIn 1s ease-in none;}
+	@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+	}
+	.logo{margin-top:1cm;}
+	.content {text-align:center;
+			  font-family: roboto, arial, sans-serif;
+			      width: 700px;
+				  border: none;
+				  padding: 25px;
+				  line-height:50px;
+			  }
+	fieldset { margin-left:2cm;
+			   margin-right:2cm;	
+			  }
+		form { background-color:#ffffff;
+				font-family: Arial, sans-serif;
+				padding: 10px;}
+		label {
+				width: 150px;
+				clear: left;
+				text-align: auto;
+				padding-right: 10px;
+				margin-top: 10px;}
+		select {margin:auto;}
+		input, textarea {margin-top: 10px;
+								display: block;}
+
+	
+	</style>
+	<script>
+	function validateForm() {
+	if (document.forms[0].email.value=="") {
+		alert("E-mail field cannot be empty.")
+		return false;
+	} //end if
+		return true;
+	}//end of function validateForm
+	</script>
+
+	
+</head>
+<body>
+<div class="overall-grid">
+	<div id="banner"><center>
+		<nav class="display-list">
+		
+			<ul>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="AboutUs.html">About Us</a></li>
+				<li><a href="Menu.html">Menu</a></li>
+				<li><a href="Gallery.html">Gallery</a></li>
+				<li><a href="Reservations.html">Reservations</a></li>
+				<li><a href="PrivateDining.html">Private Dining</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+			
+		</nav>
+		</center>
+			<div class="animate">
+			<center><img src="LeExpenszivlogo.png" class="logo" alt="Le Expensziv Logo" width="650" height="325"></center>
+				<div class="text-padding">
+					<h1 class="our-story-font">Contact Us</h1>
+				</div>
+			</div>	
+		<div><center><h1 style="padding-top:100px"> Feedback Form</h1>
+	<fieldset>
+	<form method="post" action="http://webdevbasics.net/scripts/demo.php" onsubmit="return validateForm();">
+	<label>Name: </label><input type="text" name="name"
+		id="name" size="50" maxlength="30" placeholder="Your name...">
+	<br>
+	<label>E-mail: </label><input type="email" name="email" 
+		id="email" size="50" maxlength="50" placeholder="Your e-mail...">
+	<br><br>
+	Feedback:
+	<br><textarea cols=50" rows="10" cols="30">
+		</textarea>
+	<input type="image" src="submitbutton.png" alt="Submit" width="75" height="38">
+	</form>
+	</fieldset></center></div>
+
+		
+		
+			<fieldset style="background-color:black"><legend style="text-align:center;font-size:30px;font-width:20px;color:#FFDF00;background-color:white;opacity:0.9">Reservation</legend>
+	<p style="text-align:center;line-height:20px;color:#FFDF00;"><b>OPENING HOURS:</b><br><b>LUNCH</b><br>12pm - 3pm<br><br><b>DINNER</b><br>6pm - late<br><b>CLOSED MONDAY</b>
+	</p>
+	<div style="float:left;padding-left:60px;padding-bottom:0;><a href="https://facebook.com/"><i class="fa fa-facebook-square" style="font-size:35px"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://facebook.com/"><i class="fa fa-twitter" style="font-size:35px"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://pinteret.com/"><i class="fa fa-pinterest-square" style="font-size:35px"></i></a></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://youtube.com/"><i class="fa fa-youtube" style="font-size:35px"></i></a> </div>
+	
+	</fieldset>
+	</div>
+	
+</body>
+</html>

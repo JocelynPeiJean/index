@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Le Expensziv</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles.css">
+	<style>
+
+		
+	#banner {
+			background:url(banner2.png) no-repeat top center fixed;
+			background-size:cover;
+			height:600px;
+	
+			width:100%;
+			}	
+	
+	
+	#footer-bg {
+	background:url(banner2.png) no-repeat bottom fixed;
+	
+	background-size:cover;
+
+	overflow:hidden;
+	
+	height:600px;
+	
+	width:100%;
+	
+	bottom:0;	}
+	
+	</style>
+	
+</head>
+<body>
+<div class="overall-grid">
+	<div id="banner">
+		<nav class="display-list">
+		
+			<ul>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="AboutUs.html">About Us</a></li>
+				<li><a href="Menu.html">Menu</a></li>
+				<li><a href="Gallery.html">Gallery</a></li>
+				<li><a href="Reservations.html">Reservations</a></li>
+				<li><a href="PrivateDining.html">Private Dining</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+			
+		</nav>
+		
+			<div class="animate" style="text-align:center">
+			<img src="LeExpenszivlogo.png" class="logo" alt="Le Expensziv Logo" width="650" height="325">
+				<div class="text-padding">
+					<h1 class="our-story-font">Take a Look Inside</h1>
+				</div>
+			</div>	
+		<h2 style="padding-top:3cm;font-family:Verdana,Arial,Sans-serif;text-align:center">Restaurant Gallery</h2>
+<div style="text-align:center">
+<img class="myImg" src="gal1.png" alt="Avec des glacons" width="200" height="200" style="min-width:200">
+<img class="myImg" src="gal2.png" alt="Le Kir" width="200" height="200">
+<img class="myImg" src="gal3.png" alt="Le coquelet" width="200" height="200">
+<img class="myImg" src="gal4.png" alt="Le vol-au-vent" width="200" height="200">
+<img class="myImg" src="gal5.png" alt="La galette" width="200" height="200">
+<img class="myImg" src="gal6.jpg" alt="Le coq au vin" width="200" height="200">
+<img class="myImg" src="gal7.png" alt="A votre gout" width="200" height="200">
+<img class="myImg" src="gal8.jpg" alt="Provencal" width="200" height="200">
+<img class="myImg" src="gal9.png" alt="Les pommes de terre" width="200" height="200">
+<img class="myImg" src="gal11.png" alt="Coquilles Saint-Jacques" width="200" height="200">
+<img class="myImg" src="gal12.png" alt="Moules Marinieres" width="200" height="200">
+<img class="myImg" src="gal13.png" alt="Blanquette de Veau" width="200" height="200">
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- Trigger the Modal -->
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" src="1" id="img01" alt="class">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = $('.myImg');
+var modalImg = $("#img01");
+var captionText = document.getElementById("caption");
+$('.myImg').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+</script>
+<div>
+	<div id="footer-bg">
+		<div style="padding-top:2cm;line-height:25px;text-align:center"><h1 style="color:#d4af37;text-align:center;font-family:Verdana,Arial,sans-serif">LE EXPENSZIV</h1><p style="color:white;text-align:center;font-family:bookman,Times New Roman,Serif;font-size:20px">1, Jalan Riong, Bangsar, 59100 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia</p><p style="color:#d4af37;text-align:center;font-family:Times New Roman, bookman, Serif;font-size:20px">RESERVATION NUMBER:<a href="tel:012-345-6789" style="color:white;text-align:center;font-family:bookman,times new roman, Serif;font-size:20px">012-345-6789</a><br><br>Email:<a href="mailto:leexpensziv@gmail.com" style="color:white;text-align:center;font-family:bookman,Times New Roman,Serif;font-size:20px">leexpensziv@gmail.com</a><h1 style="color:#d4af37;text-align:center;font-family:verdana,arial,sans-serif">OPENING HOURS</h1><p style="color:white;text-align:center;font-family:bookman,Times New Roman,Serif;font-size:20px">LUNCH:12PM-3PM<br><br>DINNER:6PM-LATE<br><br>CLOSED MONDAY</p></div>
+		<div class="footer-content;text-align:center">
+			
+
+        <div class="footer-left">
+		<ul>
+		<li><a href="https://facebook.com/"><i class="fa fa-facebook-square" style="font-size:36px;color:#d4af37"></i></a></li>
+		<li><a href="https://twitter.com/"><i class="fa fa-twitter" style="font-size:36px;color:#d4af37"></i></a></li>
+		<li><a href="https://youtube.com"><i class="fa fa-youtube" style="font-size:36px;color:#d4af37"></i></a></li>
+		<li><a href="https://linkedin.com"><i class="fa fa-linkedin" style="font-size:36px;color:#d4af37"></i></a></li>
+		</ul>
+		<p style="color:white;font-family:Bookman,Times New Roman,Serif;min-width:1000px">&copy;Copyright Le Expensziv 2016. All rights reserved.</p>
+        </div>
+
+        <div class="footer-right" style="text-align:right">
+		<a href="Reservations.html"><img src="reservebutton.png" alt="Reserve Now" width="100" height="100" style="min-width:1000"></a>
+        </div>
+		
+		</div>
+
+	</div>
+	</div>
+	</div>
+</div>
+</body>
+</html>
