@@ -125,6 +125,18 @@
 	
 	
 	</style>
+	   <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/font-resize.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+             {       
+                 fontResize();
+                 $(window).bind('resize', function() {
+                     fontResize();
+                 });
+             }
+        );
+    </script>
 	
 </head>
 <body>
@@ -203,6 +215,18 @@ We prioritize the happiness of our customers through efficient and well-mannered
 		<a href="Reservations.html"><img src="reservebutton.png" alt="Reserve Now" width="90" height="90" style="max-width:100%;height:auto"></a>
         </div>
 		
+		<script>function fontResize() {
+    //Set default resolution and font size
+    var resolution = 1024;
+    var font = 13;
+
+    //Get window width
+    var width = $(window).width();
+
+    //Set new font size
+    var newFont = font * (width/resolution);
+    $('body').css('font-size', newFont);
+};</script>
 		</div>
 
 	</div>
