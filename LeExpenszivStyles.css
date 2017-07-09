@@ -102,10 +102,8 @@
 				  padding: 25px;
 				  line-height:50px;
 			  }
-	@media (max-width: @screen-xs) {
-    body{font-size: 10px;}
-}
-
+	
+	
 	html {height:100%;
 		 }
 	body{
@@ -285,7 +283,7 @@ p a {text-decoration:none;
 
 	
 
-}
+
 /* Style the Image Used to Trigger the Modal */
 .myImg {
     border-radius: 5px;
