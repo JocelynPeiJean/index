@@ -143,6 +143,7 @@
 		width:100%;
 		position: fixed;
 		overflow-x:hidden;
+		overflow-y:scroll;
 		margin: 0;
 		padding: 0;
 		
@@ -153,9 +154,9 @@
 	background:url(banner.png) no-repeat bottom fixed;
 	
 	background-size:cover;
-
+	overflow-y:scroll;
 	
-	height:700px;
+	height:1000px;
 	
 	width:100%;
 	
@@ -164,10 +165,10 @@
 	
 	.footer-content {
 	
-
+	overflow-y:scroll;
 	padding: 20px;
 
-	height: 386px;
+	height: 500px;
 
 	width: 900px;
 
@@ -180,40 +181,48 @@
 }
 		.footer-left {
 
-    height: 386px;
+    height: 80px;
 
-    width:400px;
+    width:28em;
 	
 	border: none;
+	
+	max-width:100%;
 
     float: left;
 	
-	padding-top:0.5cm;
-	
+	padding-top:0cm;
+	margin-top:0cm;
 	padding-bottom:0;
-	
+	margin-left:0.7cm;
+	text-align:left;
 	font-family: Verdana,Arial,sans-serif;
+	
 
-	font-size: 15px;
+	
+	
+	
 
 }
- .footer-left ul li{display:inline;
-   float:left;
-   padding-left:1cm;
-   }
+ 
    .footer-left a{display:inline;
-   float:left;
-   padding-left:0.5cm;
+				 margin-left:0;
+				 padding-left:1cm;
+				 text-align:left;
+				 max-width:100px;
+				 
+				 
+ 
    
    }
    
 
 
-.footer-left p {padding-left:1.5cm;}
+
 
 .footer-right {
-
-	padding-top:0.5cm;
+    margin-top:0;
+	padding-top:0cm;
 
 	height: 386px;
 
@@ -257,14 +266,14 @@ p a {text-decoration:none;
 
 	font-family:Verdana,Arial,sans-serif;
 
-	font-size: 15px;
+	font-size: calc(0.5em + 1vmin);
 
 	line-height:25px;
 	
 	margin-left:6%;
    float: left;
   
-   width:400px;
+   width:27em;
    padding-top: 6cm;
    max-width: 100%;
    height: 500px;
