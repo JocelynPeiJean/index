@@ -13,7 +13,6 @@
 			background:url(banner.png) no-repeat top center fixed;
 			background-size:cover;
 			height:635px;
-	
 			width:100%;
 			}	
 	
@@ -156,7 +155,7 @@
 	background-size:cover;
 	overflow:hidden;
 	
-	height:37.5em;
+	height:37em;
 	
 
 	
@@ -196,7 +195,7 @@
 	padding-top:0cm;
 	margin-top:0cm;
 	padding-bottom:0;
-	margin-left:0.5cm;
+	margin-left:1cm;
 	text-align:left;
 	font-family: Verdana,Arial,sans-serif;
 	
