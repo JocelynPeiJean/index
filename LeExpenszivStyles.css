@@ -12,7 +12,7 @@
 	#banner {
 			background:url(banner.png) no-repeat top center fixed;
 			background-size:cover;
-			height:600px;
+			height:635px;
 	
 			width:100%;
 			}	
@@ -139,11 +139,11 @@
 	
 	.footer-grid{
 	
-		height:100%;
+		height:37.5em;
 		width:100%;
 		position: fixed;
 		overflow-x:hidden;
-		overflow-y:scroll;
+		
 		margin: 0;
 		padding: 0;
 		
@@ -154,9 +154,11 @@
 	background:url(banner.png) no-repeat bottom fixed;
 	
 	background-size:cover;
-	overflow-y:scroll;
+	overflow:hidden;
 	
-	height:1000px;
+	height:37.5em;
+	
+
 	
 	width:100%;
 	
@@ -165,7 +167,7 @@
 	
 	.footer-content {
 	
-	overflow-y:scroll;
+	
 	padding: 20px;
 
 	height: 500px;
@@ -194,7 +196,7 @@
 	padding-top:0cm;
 	margin-top:0cm;
 	padding-bottom:0;
-	margin-left:0.7cm;
+	margin-left:0.5cm;
 	text-align:left;
 	font-family: Verdana,Arial,sans-serif;
 	
@@ -223,7 +225,7 @@
 .footer-right {
     margin-top:0;
 	padding-top:0cm;
-
+	
 	height: 386px;
 
 	max-width: 400px;
